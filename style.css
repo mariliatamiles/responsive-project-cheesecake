@@ -14,6 +14,7 @@
   --white: #ffffff;
 
   --font-28: 2.8rem;
+  --font-20: 2rem;
   --font-14: 1.4rem;
 }
 
@@ -66,4 +67,32 @@ ul,ol{
 
 ul{
     margin-bottom: 2.4rem;
+}
+
+@media(min-width: 1120px){
+    main{
+        flex-direction: row;
+        max-width:fit-content;
+        gap: 16rem;
+    }
+
+    .recipe{
+        max-width: 43.5rem;
+    }
+    .ingredients{
+        max-width: 52.5rem;
+    }
+    h1,h2{
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    p, li, strong{
+        font-size: var(--font-20);
+        line-height: 2.5rem;
+    }
+    button{
+        padding: 1rem 2rem;
+        font-size: var(--font-14);
+        line-height: 2.4rem;
+    }
 }
